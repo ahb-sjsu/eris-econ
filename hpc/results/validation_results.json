@@ -1,0 +1,224 @@
+{
+  "sigma": [
+    [
+      25.0,
+      0.0,
+      0.5,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.25,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.15,
+      0.0
+    ],
+    [
+      0.5,
+      0.0,
+      0.25,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.25,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.25,
+      0.0,
+      0.0,
+      0.0,
+      0.1
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.25,
+      0.1,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.1,
+      0.25,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.15,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.25,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.1,
+      0.0,
+      0.0,
+      0.0,
+      0.25
+    ]
+  ],
+  "predictions": {
+    "ultimatum": {
+      "predicted": 36.882606626070775,
+      "target": 44.0,
+      "error": 7.117393373929225
+    },
+    "dictator": {
+      "predicted": 37.3684122905131,
+      "target": 28.35,
+      "error": 9.018412290513098
+    },
+    "public_goods": {
+      "predicted": 49.99999999999999,
+      "target": 50.0,
+      "error": 7.105427357601002e-15
+    },
+    "kt17_direction": "13/17",
+    "kt17_mae": 23.755279036919564
+  },
+  "lambda_prediction": [
+    {
+      "name": "Pure cash",
+      "n_dims": 1,
+      "lambda": 1.0
+    },
+    {
+      "name": "Commodity",
+      "n_dims": 2,
+      "lambda": 1.6278820594100178
+    },
+    {
+      "name": "Gift",
+      "n_dims": 3,
+      "lambda": 1.9148542152248031
+    },
+    {
+      "name": "Standard (KT)",
+      "n_dims": 5,
+      "lambda": 2.2217360574675644
+    },
+    {
+      "name": "Heirloom",
+      "n_dims": 7,
+      "lambda": 3.5314909835351855
+    }
+  ],
+  "endowment_ratio": 1.6606623363816189,
+  "held_out": {
+    "ultimatum": {
+      "predicted": 36.882606626070775,
+      "observed_mean": 47.64150943396226,
+      "observed_median": 50.0,
+      "n": 106,
+      "error": 10.758902807891488,
+      "source": "Fraser & Nettle (2020) exp 1"
+    },
+    "public_goods": {
+      "predicted": 49.99999999999999,
+      "observed_mean": 45.73863636363637,
+      "n": 528,
+      "error": 4.261363636363626,
+      "source": "Fraser & Nettle (2020) exp 2"
+    }
+  },
+  "cross_cultural": [
+    {
+      "culture": "Machiguenga",
+      "social_mult": 0.3,
+      "predicted": 35.99158741141723,
+      "observed": 26,
+      "error": 9.991587411417228
+    },
+    {
+      "culture": "Hadza",
+      "social_mult": 0.4,
+      "predicted": 36.154431198685636,
+      "observed": 27,
+      "error": 9.154431198685636
+    },
+    {
+      "culture": "Tsimane",
+      "social_mult": 0.5,
+      "predicted": 36.30253403850629,
+      "observed": 32,
+      "error": 4.302534038506288
+    },
+    {
+      "culture": "US students",
+      "social_mult": 1.0,
+      "predicted": 36.882606626070775,
+      "observed": 42,
+      "error": 5.117393373929225
+    },
+    {
+      "culture": "Europe avg",
+      "social_mult": 1.0,
+      "predicted": 36.882606626070775,
+      "observed": 44,
+      "error": 7.117393373929225
+    },
+    {
+      "culture": "Au (PNG)",
+      "social_mult": 1.5,
+      "predicted": 37.29764275592368,
+      "observed": 44,
+      "error": 6.7023572440763175
+    },
+    {
+      "culture": "Lamalera",
+      "social_mult": 2.0,
+      "predicted": 37.65878019210647,
+      "observed": 57,
+      "error": 19.34121980789353
+    }
+  ],
+  "metadata": {
+    "elapsed_seconds": 225.52972316741943,
+    "n_parameters": 9,
+    "model": "Geometric Economics (Bond Geodesic Equilibrium)",
+    "equation": "f(n) = g(n) + h(n)"
+  }
+}
