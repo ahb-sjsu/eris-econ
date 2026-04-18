@@ -40,7 +40,7 @@ from eris_econ.games_v2 import (
 )
 from eris_econ.metrics import mahalanobis_distance
 
-DATA_DIR = Path(__file__).parent.parent.parent / "data"
+DATA_DIR = Path(__file__).parent / "data"
 
 
 # ---------------------------------------------------------------------------

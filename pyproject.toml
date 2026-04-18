@@ -46,3 +46,6 @@ testpaths = ["tests"]
 [tool.ruff]
 line-length = 100
 target-version = "py310"
+
+[tool.setuptools.package-data]
+eris_econ = ["data/*.csv"]
