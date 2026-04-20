@@ -33,6 +33,48 @@ Dimensions d₁–d₄ are *transferable* (conserved in bilateral exchange). Dim
 
 ## Key Concepts
 
+```mermaid
+flowchart TB
+    subgraph R9[R9 decision manifold]
+      direction LR
+      T[Transferable d1-d4<br/>consequences rights<br/>fairness autonomy]
+      E[Evaluative d5-d9<br/>privacy social virtue<br/>legitimacy epistemic]
+    end
+
+    STATE[Current state]
+    GOALS[Candidate goals]
+
+    subgraph ASTAR[A-star pathfinding]
+      G[g System 2<br/>deliberate cost]
+      H[h System 1<br/>moral intuition]
+      M[Mahalanobis + boundary penalties]
+    end
+
+    PATH[Bond Geodesic<br/>optimal path]
+    BGE[Bond Geodesic Equilibrium<br/>multi-agent fixed point]
+
+    subgraph EMRG[Emergent phenomena]
+      LA[Loss aversion lambda 2.25]
+      RD[Reference dependence]
+      EE[Endowment effect]
+      FR[Framing effects]
+    end
+
+    T --> STATE
+    E --> STATE
+    STATE --> G
+    GOALS --> G
+    M --> G
+    M --> H
+    G --> PATH
+    H --> PATH
+    PATH --> BGE
+    M --> LA
+    M --> RD
+    M --> EE
+    M --> FR
+```
+
 ### Bond Geodesic
 The optimal path on the decision manifold from current state to goal, minimizing Mahalanobis distance + boundary penalties. This is computed via A\* search, where:
 - **g(n)** = accumulated cost (System 2: deliberate calculation)
