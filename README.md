@@ -4,6 +4,7 @@
 [![PyPI](https://img.shields.io/pypi/v/eris-econ)](https://pypi.org/project/eris-econ/)
 [![Python](https://img.shields.io/pypi/pyversions/eris-econ)](https://pypi.org/project/eris-econ/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20660122.svg)](https://doi.org/10.5281/zenodo.20660122)
 
 Geometric economics: multi-dimensional decision manifolds, A\* pathfinding, and Bond Geodesic Equilibrium.
 

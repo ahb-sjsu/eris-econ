@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software in academic work, please cite via the Zenodo DOI below."
+title: "eris-econ: Geometric economics on multi-dimensional decision manifolds with A* pathfinding and Bond Geodesic Equilibrium"
+authors:
+  - family-names: Bond
+    given-names: Andrew H.
+    email: andrew.bond@sjsu.edu
+    affiliation: "San Jose State University"
+    orcid: "https://orcid.org/0009-0009-1769-5099"
+type: software
+version: "0.1.0"
+date-released: "2026-06-12"
+license: MIT
+repository-code: "https://github.com/ahb-sjsu/eris-econ"
+url: "https://github.com/ahb-sjsu/eris-econ"
+doi: "10.5281/zenodo.20660122"
+identifiers:
+  - description: "This specific release (v0.1.0)"
+    type: doi
+    value: "10.5281/zenodo.20660123"
+  - description: "Concept DOI (always resolves to the latest release)"
+    type: doi
+    value: "10.5281/zenodo.20660122"
