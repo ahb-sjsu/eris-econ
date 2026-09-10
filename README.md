@@ -134,6 +134,31 @@ lambda_ratio = compute_loss_aversion(sigma)
 print(f"Loss aversion λ = {lambda_ratio:.2f}")  # > 1.0
 ```
 
+## Reproducing Table VII of Bond (2026, IEEE TCSS)
+
+The sixteen-target benchmark of *Geometric Prediction of Economic Behavior:
+Cross-Domain Validation Across Game Theory and Prospect Theory* is recomputed,
+not stored. One command prints the table with the paper's rounding, the
+16/16 pass count, the overall MAE of 2.70%, the Ruggeri lottery-subset MAE of
+3.95%, and the game and non-game figures quoted in the text:
+
+```bash
+eris-econ-table7                      # plain text
+eris-econ-table7 --format latex       # booktabs rows for the manuscript
+eris-econ-table7 --format json        # machine-readable, with the summary
+```
+
+```python
+from eris_econ.paper import table_vii, selected_sigma
+
+t = table_vii()
+t.summary["overall_mae"]              # 2.702...
+selected_sigma()                      # the paper's diagonal covariance
+```
+
+`tests/test_paper.py` asserts every printed value of Table VII, so the test
+suite fails if the package ever stops reproducing the paper.
+
 ## Modules
 
 | Module | Description |
@@ -147,6 +172,9 @@ print(f"Loss aversion λ = {lambda_ratio:.2f}")  # > 1.0
 | `behavioral.py` | Loss aversion, reference dependence, endowment effect, framing |
 | `calibration.py` | Parameter estimation for Σ and β from behavioral data |
 | `welfare.py` | Multi-dimensional Pareto optimality and social welfare |
+| `targets.py` | The sixteen benchmark targets and their encodings (Bond 2026, IEEE TCSS) |
+| `structural_fuzz.py` | Exhaustive active-set search, sensitivity profile, robustness index |
+| `paper.py` | Recomputes Table VII of the TCSS paper; `eris-econ-table7` |
 
 ## Citation
 
